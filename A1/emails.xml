@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+<record><id>1</id><first_name>Adiana</first_name><last_name>Paulat</last_name><email>apaulat0@technorati.com</email><gender>Female</gender><ip_address>216.250.245.57</ip_address><send_date>2017-05-17T23:04:27Z</send_date><email_body>​</email_body><email_title>Up-sized</email_title></record><record><id>2</id><first_name>Jaye</first_name><last_name>O'Donnelly</last_name><email>jodonnelly1@amazon.com</email><gender>Male</gender><ip_address>15.66.35.144</ip_address><send_date>2017-11-09T05:08:56Z</send_date><email_body>&lt;script&gt;alert('hi')&lt;/script&gt;</email_body><email_title>real-time</email_title></record>
