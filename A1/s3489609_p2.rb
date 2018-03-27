@@ -1,5 +1,3 @@
-require 'active_support'
-require 'active_support/core_ext'
 require 'nokogiri'
 require 'optparse'
 require 'json'
@@ -37,17 +35,12 @@ begin
 	nodes = doc.xpath('//record')
 	results = []
 	resultsFiltered = []
-	test1 = nodes[0]
-	# first_names = nodes.xpath("//first_name").text
-
-	# puts first_names
 
 	if options.has_key?(:name)
 		i = 0
 		nodes.size.times do
 			if nodes[i].xpath('first_name').text == options[:name]
 				results.push(nodes[i])
-				# puts results
 			end
 			i+=1
 		end
@@ -58,15 +51,19 @@ begin
 		results.size.times do
 			if results[i].xpath('ip_address').text == options[:ip]
 				resultsFiltered.push(results[i])
-				# puts resultsFiltered
 			end
 			i+=1
 		end
 	elsif resultsFiltered = results
 	end
 
-	resultsFiltered.each do |elem|
-		puts JSON.pretty_generate(Hash.from_xml(elem.to_xml))
+	resultsFiltered.each do |node|
+	jsonHash = {}
+
+	node.children.each do |elem|
+		jsonHash[eelem.name] = element.text
+	end
+	puts JSON.pretty_generate(jsonHash)
 	end
 	
 
