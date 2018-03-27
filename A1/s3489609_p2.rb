@@ -64,12 +64,8 @@ begin
 		end
 	elsif resultsFiltered = results
 	end
-	# puts JSON.pretty_generate(Hash.from_xml(nodes.to_xml))
-	# puts "<record><id>1</id><first_name>Adiana</first_name><last_name>Paulat</last_name><email>apaulat0@technorati.com</email><gender>Female</gender><ip_address>216.250.245.57</ip_address><send_date>2017-05-17T23:04:27Z</send_date><email_body>​</email_body><email_title>Up-sized</email_title></record>"
-	# puts JSON.pretty_generate(Hash.from_xml('<record><id>1</id><first_name>Adiana</first_name><last_name>Paulat</last_name><email>apaulat0@technorati.com</email><gender>Female</gender><ip_address>216.250.245.57</ip_address><send_date>2017-05-17T23:04:27Z</send_date><email_body>​</email_body><email_title>Up-sized</email_title></record>'))
 
 	resultsFiltered.each do |elem|
-		# puts JSON.pretty_generate(Hash.from_xml(elem.to_xml))
 		puts JSON.pretty_generate(Hash.from_xml(elem.to_xml))
 	end
 	
